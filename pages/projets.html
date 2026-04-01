@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mes Projets</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav style="display: flex;justify-content: space-between;">
+            <div class="logo">Dev<span>FS</span></div>
+            <ul>
+                <li><a href="../index.html">Présentation</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <h1>Mes <span class="highlight">Projets</span></h1>
+
+        <section class="search-section">
+            <form action="#" method="GET" class="search-form">
+                <label for="search-input">Filtrer les projets :</label>
+                <div class="search-box">
+                    <input type="search" id="search-input" name="q" placeholder="Ex: PHP, C, Réseau...">
+                    <button type="submit" class="btn-search">Rechercher</button>
+                </div>
+            </form>
+        </section>
+        
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../images/ecopack.jpeg" alt="EcoPack Sénégal">
+                </div>
+                <div class="project-info">
+                    <h3>EcoPack Sénégal</h3>
+                    <p>Entrepreneuriat : solutions d'emballages écologiques pour le Sénégal.</p>
+                    <span class="tech-tag">Business Plan</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../images/projet-c.png" alt="Répertoire C">
+                </div>
+                <div class="project-info">
+                    <h3>Répertoire Téléphonique</h3>
+                    <p>Gestion de contacts avec type CONTACT et base SQL.</p>
+                    <span class="tech-tag">Langage C</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../images/tech-internet.png" alt="Routage IPv4">
+                </div>
+                <div class="project-info">
+                    <h3>Routage IPv4</h3>
+                    <p>Configuration de routes statiques récursives et par défaut.</p>
+                    <span class="tech-tag">Réseau</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 - Awa Seck | Portfolio Étudiant</p>
+            <div class="footer-links">
+                <a href="https://github.com/ton-username" target="_blank">GitHub</a>
+                <a href="../Mon_CV_professionnel_.pdf" target="_blank" class="btn-cv">
+                    📄 Télécharger mon CV (PDF)
+                </a>
+            </div>
+            <p class="instructor">Projet pour Monsieur Diouf</p>
+        </div>
+    </footer>
+
+</body>
+</html>
