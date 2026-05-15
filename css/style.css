@@ -192,7 +192,6 @@ strong {
     text-align: center;
 }
 
-/* 3ème Formulaire obligatoire : Recherche */
 .search-section {
     margin: 30px auto 50px;
     max-width: 600px;
@@ -229,7 +228,6 @@ strong {
     cursor: pointer;
 }
 
-/* Grille de projets */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -237,22 +235,24 @@ strong {
     margin-top: 40px;
 }
 
-.project-card {
+.carte-projet {
     background: var(--bg-card);
     border-radius: 12px;
     border: 1px solid rgba(251, 191, 36, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card:hover {
+.carte-projet:hover {
     transform: translateY(-10px);
     border-color: var(--accent);
 }
 
-.project-image img {
+.carte-projet img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -261,19 +261,20 @@ strong {
     text-align: left;
 }
 
-.project-info h3 {
+.carte-projet h3 {
     color: var(--accent);
     margin-bottom: 10px;
 }
 
-.tech-tag {
+.badge {
     display: inline-block;
     border: 1px solid var(--accent);
     color: var(--accent);
     padding: 3px 10px;
     font-size: 0.75rem;
     border-radius: 4px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 /* --- PAGE CONTACT (CORRIGÉE & COMPLÈTE) --- */
 .contact-container {

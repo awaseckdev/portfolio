@@ -1,3 +1,4 @@
+<?php require_once '../fonctions.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,17 +10,7 @@
 </head>
 <body>
 
-    <header>
-        <nav style="display: flex;justify-content: space-between;">
-            <div class="logo">Dev<span>FS</span></div>
-            <ul>
-                <li><a href="../index.html">Présentation</a></li>
-                <li><a href="competences.html" class="active">Compétences</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php require '../composants/navigation.php'; ?>
 
     <main class="skills-container">
         <h1>Mes <span class="highlight">Compétences</span></h1>
@@ -49,9 +40,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Portfolio de Développeur</p>
-    </footer>
+    <?php require '../composants/pied-de-page.php'; ?>
+    
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+<?php require_once 'fonctions.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,18 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <nav style="display: flex;justify-content: space-between;">
-            <div class="logo">Dev<span>FS</span></div>
-            <ul>
-                <li><a href="index.html" class="active">Présentation</a></li>
-                <li><a href="pages/competences.html">Compétences</a></li>
-                <li><a href="pages/projets.html">Projets</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php require 'composants/navigation.php'; ?>
 
     <main>
         <section class="hero">
@@ -29,7 +19,7 @@
                 <h1>Salut, je suis <span class="highlight">Awa Seck</span></h1>
                 <p class="subtitle">Développeuse Fullstack en formation</p>
                 <div class="cta">
-                    <a href="pages/projets.html" class="btn">Découvrir mes projets</a>
+                    <a href="pages/projets.php" class="btn">Découvrir mes projets</a>
                 </div>
             </div>
 
@@ -57,9 +47,10 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Portfolio Awa SECK</p>
-    </footer>
+    <?php require 'composants/pied-de-page.php'; ?>
+
+
+    
 
 </body>
 </html>
