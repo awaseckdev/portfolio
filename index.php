@@ -1,4 +1,8 @@
-<?php require_once 'fonctions.php'; ?>
+<?php
+require_once 'config/connexion.php';
+require_once 'fonctions.php';
+enregistrerVisite($pdo);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -27,6 +31,15 @@
                 <img src="images/ma-photo.png" alt="Portrait Awa Seck">
             </div>
         </section>
+        <section class="recherche-projets">
+    <div class="container">
+        <h2>Rechercher un projet</h2>
+        <form action="pages/projets.php" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="Rechercher par titre ou description..." required>
+            <button type="submit" class="btn">Rechercher</button>
+        </form>
+    </div>
+</section>
 
         <section class="a-propos">
             <div class="about-content">

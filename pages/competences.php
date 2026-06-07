@@ -1,4 +1,8 @@
-<?php require_once '../fonctions.php'; ?>
+<?php
+require_once '../config/connexion.php';
+require_once '../fonctions.php';
+enregistrerVisite($pdo);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
